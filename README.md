@@ -56,6 +56,7 @@ This is done by introducing 8 new format strings that can be added to
  - `#{cpu_percentage}` - will show CPU percentage (averaged across cores)
  - `#{cpu_bg_color}` - will change the background color based on the CPU percentage
  - `#{cpu_fg_color}` - will change the foreground color based on the CPU percentage
+ - `#{cpu_governor}` - will show cpufreq governor (linux only)
 
 GPU equivalents also exist:
 
@@ -99,6 +100,9 @@ Here are all available options with their default values:
 @cpu_high_bg_color "#[bg=red]" # background color when cpu is high
 
 @cpu_percentage_format "%3.1f%%" # printf format to use to display percentage
+
+@cpu_governor_powersave_fg_color
+@cpu_governor_performance_fg_color
 ```
 
 Same options are valid with `@gpu`
