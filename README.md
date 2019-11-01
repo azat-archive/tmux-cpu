@@ -57,6 +57,7 @@ This is done by introducing 8 new format strings that can be added to
  - `#{cpu_bg_color}` - will change the background color based on the CPU percentage
  - `#{cpu_fg_color}` - will change the foreground color based on the CPU percentage
  - `#{cpu_governor}` - will show cpufreq governor (linux only)
+ - `#{cpu_rpm}` - will show CPU FAN RPM
 
 GPU equivalents also exist:
 
@@ -103,6 +104,10 @@ Here are all available options with their default values:
 
 @cpu_governor_powersave_fg_color
 @cpu_governor_performance_fg_color
+
+@cpu_rpm_low_fg_color
+@cpu_rpm_medium_fg_color
+@cpu_rpm_high_fg_color
 ```
 
 Same options are valid with `@gpu`
